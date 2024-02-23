@@ -31,8 +31,23 @@ export const TopBar = () => {
     },
     */
     {
+      title: "Fee 估算",
+      path: "/fee-estimate",
+      tip:"",
+    },
+    {
       title: "追加手续费",
       path: "/increase-fee",
+      tip:"",
+    },
+    {
+      title: "API 服务",
+      path: "/api-service",
+      tip:"",
+    },
+    {
+      title: "Script分析",
+      path: "/script-analytics",
       tip:"",
     },
   ];
@@ -96,7 +111,7 @@ const LinkItem = styled(Link)`
 `;
 
 const MenusBox = styled.div`
-  width: 638px;
+  width: 730px;
   height: 66px;
   background-color: #181b20;
   font-size: 20px;
