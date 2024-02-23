@@ -3,12 +3,25 @@
 const nextConfig = {
   output: 'standalone',
   reactStrictMode: true,
+
   compiler: {
     styledComponents: true,
   },
+
   images:{
     unoptimized:true
   },
+
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/accelerator-txn',
+        permanent: false,
+      },
+    ]
+  },
+
   async rewrites() {
     return [
       {

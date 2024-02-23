@@ -50,7 +50,7 @@ const ConnectSuccess: React.FC<{ address: string }> = ({ address }) => {
   
   return (
     <UserToolsBox>
-      <HistoryButtonBox href={"/history"}>History</HistoryButtonBox>
+      <HistoryButtonBox href={"/history"}></HistoryButtonBox>
       <ContentSuccessBox>
         <ContentSuccessTopBox ref={setTargetRef}>
           <ContentSuccessLineBox>

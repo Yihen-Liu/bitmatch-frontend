@@ -14,21 +14,26 @@ export const TopBar = () => {
 
   const menusArr = [
     {
-      title: "Home",
-      path: "/",
+      title: "交易加速",
+      path: "/accelerator-txn",
+      tip:"",
     },
     {
-      title: "Launchpad",
-      path: "/lists",
+      title: "交易取消",
+      path: "/cancle-txn",
+      tip:"",
     },
+    /*
     {
       title: "Marketplace",
       path: "",
       tip: "Coming Soon",
     },
+    */
     {
-      title: "Genesis NFT",
-      path: "/genesis-nft",
+      title: "追加手续费",
+      path: "/increase-fee",
+      tip:"",
     },
   ];
   const dispatch = useDispatch();
