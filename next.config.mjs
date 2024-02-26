@@ -11,7 +11,7 @@ const nextConfig = {
   images:{
     unoptimized:true
   },
-
+/*
   async redirects() {
     return [
       {
@@ -21,7 +21,7 @@ const nextConfig = {
       },
     ]
   },
-
+*/
   async rewrites() {
     return [
       {

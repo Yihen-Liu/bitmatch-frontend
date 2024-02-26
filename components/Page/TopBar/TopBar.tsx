@@ -14,6 +14,11 @@ export const TopBar = () => {
 
   const menusArr = [
     {
+      title: "Home",
+      path: "/",
+      tip:"",
+    },
+    {
       title: "API 服务",
       path: "/api-service",
       tip:"",

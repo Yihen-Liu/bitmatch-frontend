@@ -58,9 +58,6 @@ const ChainLinks: React.FC = () => {
 const LaunchpadSlice: React.FC = () => {
   return (
     <ShowItemSliceBox>
-      <ShowItemSliceItemBox>
-        <ImgBox alt="" width={660} src={LaunchpadImg} />
-      </ShowItemSliceItemBox>
       <ShowItemSliceItemBox className="launchpad">
         <ShowItemSliceTitleBox>
           Launch<span>pad</span>
@@ -79,20 +76,14 @@ const MarketplaceSlice: React.FC = () => {
     <ShowItemSliceBox className="show_bg">
       <ShowItemSliceItemBox className="marketplace">
         <ShowItemSliceTitleBox>
-          Market<span>place</span>
+          <span>Market</span>place
         </ShowItemSliceTitleBox>
         <ShowItemSliceContxtBox>
-          Efficient and low-cost trading
+          Efficient and low-cost trading market
           <br />
-          market
-          <br />
-          <br />
-          All BRC-20 and <br />
-          ARC20 deals here
         </ShowItemSliceContxtBox>
       </ShowItemSliceItemBox>
       <ShowItemSliceItemBox style={{ paddingTop: 250 }}>
-        <ImgBox alt="" width={560} src={MarketplaceImg} />
       </ShowItemSliceItemBox>
     </ShowItemSliceBox>
   );
@@ -146,13 +137,6 @@ export default function IndexPage() {
       <Spaced size="80" />
       <MarketplaceSlice />
       <Spaced size="210" />
-      <DecentralizedIndex />
-      <Spaced size="250" />
-      <ProjectLists />
-      <Spaced size="250" />
-      <PageTitleBox>Partners</PageTitleBox>
-      <Spaced size="80" />
-      <ChainLinks />
     </Page>
   );
 }
@@ -265,9 +249,8 @@ const ShowItemSliceItemBox = styled.div`
 const ShowItemSliceTitleBox = styled.div`
   max-width: 590px;
   font-size: 80px;
-  color: #fff;
   font-weight: 600;
-  color: #ffffff;
+  color: #c2c5c8;
   line-height: 120px;
   span {
     color: #f8931a;
@@ -388,7 +371,7 @@ const HeadContainerText = styled.div`
   font-size: 100px;
   font-family: Arial Black;
   font-weight: 900;
-  color: #ffffff;
+  color: #c2c5c8;
   text-align: center;
   line-height: 120px;
   & > div {
