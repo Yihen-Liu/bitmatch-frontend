@@ -16,7 +16,7 @@ const nextConfig = {
     return [
       {
         source: '/',
-        destination: '/txn-assist',
+        destination: '/api-service',
         permanent: false,
       },
     ]
