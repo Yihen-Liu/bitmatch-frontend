@@ -1,11 +1,11 @@
 import styled from '@emotion/styled'
 import React from 'react'
-import DeindexImg from '@/assets/logo/deindex.png'
+import SathubImg from '@/assets/logo/sathub.png'
 import Image from 'next/image'
 
 const Logo: React.FC = () => {
   return <div>
-    <LogoBox alt='deindex' src={DeindexImg} height={36}/>
+    <LogoBox alt='deindex' src={SathubImg} height={40}/>
   </div>
   // return (
   //  <LogoText>

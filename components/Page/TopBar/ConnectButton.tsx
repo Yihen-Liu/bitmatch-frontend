@@ -271,7 +271,7 @@ const ContentSuccessTopBox = styled.div`
 const ContentSuccessLineBox = styled.div`
   cursor: pointer;
   height: 52px;
-  color: #fff;
+  color: #000;
   width: 200px;
   display: flex;
   align-items: center;
@@ -310,5 +310,6 @@ const ContentSuccessBox = styled.div`
 const ConnectButtonBox = styled(Button)`
   width: 200px;
   font-size: 20px;
+  color: #c2c5c8;
   /* padding: 0 30px; */
 `

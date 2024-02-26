@@ -115,7 +115,7 @@ const DecentralizedIndex: React.FC = () => {
     </DecentralizedindexBox>
   );
 };
-export default function IncreaseFeePage() {
+export default function ApiServicePage() {
   return (
     <Page>
       {/* <ProgressCountdown deadline={15000}  /> */}
@@ -380,7 +380,7 @@ const HeadContainerText = styled.div`
   font-size: 100px;
   font-family: Arial Black;
   font-weight: 900;
-  color: #ffffff;
+  color: #c2c5c8;
   text-align: center;
   line-height: 120px;
   & > div {

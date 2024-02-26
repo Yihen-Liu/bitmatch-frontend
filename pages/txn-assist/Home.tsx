@@ -58,13 +58,11 @@ const ChainLinks: React.FC = () => {
 const LaunchpadSlice: React.FC = () => {
   return (
     <ShowItemSliceBox>
-      <ShowItemSliceItemBox>
-        <ImgBox alt="" width={660} src={LaunchpadImg} />
-      </ShowItemSliceItemBox>
       <ShowItemSliceItemBox className="launchpad">
         <ShowItemSliceTitleBox>
-          Launch<span>pad</span>
+         <span>手续费</span>追加
         </ShowItemSliceTitleBox>
+
         <ShowItemSliceContxtBox>
           Launch the highest-quality projects to match the most suitable
           investments
@@ -79,50 +77,27 @@ const MarketplaceSlice: React.FC = () => {
     <ShowItemSliceBox className="show_bg">
       <ShowItemSliceItemBox className="marketplace">
         <ShowItemSliceTitleBox>
-          Market<span>place</span>
+          交易<span>取消</span>
         </ShowItemSliceTitleBox>
         <ShowItemSliceContxtBox>
           Efficient and low-cost trading
           <br />
           market
           <br />
-          <br />
-          All BRC-20 and <br />
-          ARC20 deals here
         </ShowItemSliceContxtBox>
-      </ShowItemSliceItemBox>
-      <ShowItemSliceItemBox style={{ paddingTop: 250 }}>
-        <ImgBox alt="" width={560} src={MarketplaceImg} />
       </ShowItemSliceItemBox>
     </ShowItemSliceBox>
   );
 };
-const DecentralizedIndex: React.FC = () => {
-  return (
-    <DecentralizedindexBox>
-      <ShowItemSliceLineBox>
-        <ImgBox alt="" width={1035} src={DecentralizedindexImg} />
-      </ShowItemSliceLineBox>
-      <ShowItemSliceLineBox className="decentralizedindex">
-        <DecentralizedindexTitBox>
-          Decentralized<span>index</span>
-        </DecentralizedindexTitBox>
-        <DecentralizedindexTextBox>
-          A fully decentralized Ordinals index network driven by consensus, any
-          node can join and exit the network at will
-        </DecentralizedindexTextBox>
-      </ShowItemSliceLineBox>
-    </DecentralizedindexBox>
-  );
-};
-export default function IncreaseFeePage() {
+
+export default function TxnAssistPage() {
   return (
     <Page>
       {/* <ProgressCountdown deadline={15000}  /> */}
       <HeadContainerBox>
         <HeadContainerText>
           <div>
-            追加手续费<ImgBox width={88} alt="" src={BIcon} />
+            交易加速<ImgBox width={88} alt="" src={BIcon} />
             <span>itcoin</span>
           </div>
         </HeadContainerText>
@@ -130,12 +105,11 @@ export default function IncreaseFeePage() {
         <HeadContainerUseUsBox>
           <HeadContainerUseUsLeftBox>
             <HeadContainerUseUsDescBox>
-              Launchpad, Marketplace, decentralized index, Bitcoin full
-              ecological infrastructure
+            交易助手中的一种
             </HeadContainerUseUsDescBox>
             <LinkIcons />
           </HeadContainerUseUsLeftBox>
-          <HeadContainerUseUsButton href="/lists">
+          <HeadContainerUseUsButton href="/txn-assist">
             Use Us
           </HeadContainerUseUsButton>
         </HeadContainerUseUsBox>
@@ -257,9 +231,8 @@ const ShowItemSliceItemBox = styled.div`
 const ShowItemSliceTitleBox = styled.div`
   max-width: 590px;
   font-size: 80px;
-  color: #fff;
   font-weight: 600;
-  color: #ffffff;
+  color: #c2c5c8;
   line-height: 120px;
   span {
     color: #f8931a;

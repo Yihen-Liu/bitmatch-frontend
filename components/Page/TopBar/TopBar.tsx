@@ -14,33 +14,6 @@ export const TopBar = () => {
 
   const menusArr = [
     {
-      title: "交易加速",
-      path: "/accelerator-txn",
-      tip:"",
-    },
-    {
-      title: "交易取消",
-      path: "/cancle-txn",
-      tip:"",
-    },
-    /*
-    {
-      title: "Marketplace",
-      path: "",
-      tip: "Coming Soon",
-    },
-    */
-    {
-      title: "Fee 估算",
-      path: "/fee-estimate",
-      tip:"",
-    },
-    {
-      title: "追加手续费",
-      path: "/increase-fee",
-      tip:"",
-    },
-    {
       title: "API 服务",
       path: "/api-service",
       tip:"",
@@ -50,6 +23,38 @@ export const TopBar = () => {
       path: "/script-analytics",
       tip:"",
     },
+    {
+      title: "Fee 估算",
+      path: "/fee-estimate",
+      tip:"",
+    },
+    {
+      title: "交易助手",
+      path: "/txn-assist",
+      tip:"",
+    },
+    /*
+    {
+      title: "交易加速",
+      path: "/accelerator-txn",
+      tip:"",
+    },
+    {
+      title: "交易取消",
+      path: "/cancle-txn",
+      tip:"",
+    },
+    {
+      title: "Marketplace",
+      path: "",
+      tip: "Coming Soon",
+    },
+    {
+      title: "追加手续费",
+      path: "/increase-fee",
+      tip:"",
+    },
+  */
   ];
   const dispatch = useDispatch();
   return (
@@ -111,9 +116,9 @@ const LinkItem = styled(Link)`
 `;
 
 const MenusBox = styled.div`
-  width: 730px;
+  width: 630px;
   height: 66px;
-  background-color: #181b20;
+  background-color: #FFFFFF;
   font-size: 20px;
   display: flex;
   align-items: center;
