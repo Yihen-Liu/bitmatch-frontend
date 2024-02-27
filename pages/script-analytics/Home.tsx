@@ -1,6 +1,5 @@
 /* Components */
 
-import Button from "@/components/Button";
 import Page from "@/components/Page";
 import styled from "@emotion/styled";
 import BIcon from "@/assets/img/b.png";
@@ -20,12 +19,10 @@ import LaunchpadImg from "@/assets/img/Launchpad.png";
 import MarketplaceImg from "@/assets/img/Marketplace.png";
 import MarketplaceBgImg from "@/assets/img/Marketplace_bg.png";
 
-import ProjectLists from "./ProjectLists";
 import { Spaced } from "@/components/Spaced";
 import { Chains } from "@/utils/Chains";
 
 import Link from "next/link";
-import ProgressCountdown from "@/components/ProgressCountdown";
 
 const ChainIconItem: React.FC<{ chain: Chains; width: number }> = ({
   chain,

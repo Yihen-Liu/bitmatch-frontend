@@ -1,6 +1,5 @@
 /* Components */
 
-import Button from "@/components/Button";
 import Page from "@/components/Page";
 import styled from "@emotion/styled";
 import BIcon from "@/assets/img/b.png";
@@ -13,19 +12,13 @@ import R2Img from "@/assets/img/r2_img.png";
 
 import L0Img from "@/assets/img/l0_img.png";
 import R0Img from "@/assets/img/r0_img.png";
-import LinkIcons from "@/components/Page/Footer/LinkIcons";
 import ChainIcons from "@/components/ChainIcons";
-import DecentralizedindexImg from "@/assets/img/Decentralizedindex.png";
-import LaunchpadImg from "@/assets/img/Launchpad.png";
-import MarketplaceImg from "@/assets/img/Marketplace.png";
 import MarketplaceBgImg from "@/assets/img/Marketplace_bg.png";
 
-import ProjectLists from "./ProjectLists";
 import { Spaced } from "@/components/Spaced";
 import { Chains } from "@/utils/Chains";
 
 import Link from "next/link";
-import ProgressCountdown from "@/components/ProgressCountdown";
 
 const ChainIconItem: React.FC<{ chain: Chains; width: number }> = ({
   chain,
@@ -64,11 +57,14 @@ const LaunchpadSlice: React.FC = () => {
         </ShowItemSliceTitleBox>
 
         <ShowItemSliceContxtBox>
-          Launch the highest-quality projects to match the most suitable
+          Launch the highest-quality projects to 
           investments
         </ShowItemSliceContxtBox>
         <Spaced size="260" />
       </ShowItemSliceItemBox>
+      <HeadContainerUseUsButton href="/increase-fee">
+            Use Us
+      </HeadContainerUseUsButton>
     </ShowItemSliceBox>
   );
 };
@@ -86,6 +82,9 @@ const MarketplaceSlice: React.FC = () => {
           <br />
         </ShowItemSliceContxtBox>
       </ShowItemSliceItemBox>
+      <HeadContainerUseUsButton href="/cancle-txn">
+            Use Us
+      </HeadContainerUseUsButton>
     </ShowItemSliceBox>
   );
 };
@@ -97,19 +96,21 @@ export default function TxnAssistPage() {
       <HeadContainerBox>
         <HeadContainerText>
           <div>
-            交易加速<ImgBox width={88} alt="" src={BIcon} />
+            交易助手<ImgBox width={88} alt="" src={BIcon} />
             <span>itcoin</span>
           </div>
         </HeadContainerText>
 
         <HeadContainerUseUsBox>
           <HeadContainerUseUsLeftBox>
+        <ShowItemSliceTitleBox>
+          交易<span>加速</span>
+        </ShowItemSliceTitleBox>
             <HeadContainerUseUsDescBox>
-            交易助手中的一种
+            交易助手中的一种: CPFP加速交易
             </HeadContainerUseUsDescBox>
-            <LinkIcons />
           </HeadContainerUseUsLeftBox>
-          <HeadContainerUseUsButton href="/txn-assist">
+          <HeadContainerUseUsButton href="/accelerator-txn">
             Use Us
           </HeadContainerUseUsButton>
         </HeadContainerUseUsBox>
@@ -230,7 +231,7 @@ const ShowItemSliceItemBox = styled.div`
 `;
 const ShowItemSliceTitleBox = styled.div`
   max-width: 590px;
-  font-size: 80px;
+  font-size: 50px;
   font-weight: 600;
   color: #c2c5c8;
   line-height: 120px;
@@ -325,7 +326,7 @@ const ImgBox = styled(Image)`
   height: auto;
 `;
 const HeadContainerUseUsButton = styled(Link)`
-  width: 240px;
+  width: 200px;
   height: 80px;
   color: #c2c5c8;
   text-decoration: none;
