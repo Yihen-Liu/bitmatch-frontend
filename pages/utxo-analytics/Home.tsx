@@ -112,14 +112,14 @@ const DecentralizedIndex: React.FC = () => {
     </DecentralizedindexBox>
   );
 };
-export default function ScriptAnalyticsPage() {
+export default function UTXOAnalyticsPage() {
   return (
     <Page>
       {/* <ProgressCountdown deadline={15000}  /> */}
       <HeadContainerBox>
         <HeadContainerText>
           <div>
-            脚本分析<ImgBox width={88} alt="" src={BIcon} />
+            UTXO<ImgBox width={88} alt="" src={BIcon} />
             <span>itcoin</span>
           </div>
         </HeadContainerText>

@@ -24,8 +24,8 @@ export const TopBar = () => {
       tip:"",
     },
     {
-      title: "Script分析",
-      path: "/script-analytics",
+      title: "UTXO分析",
+      path: "/utxo-analytics",
       tip:"",
     },
     {
