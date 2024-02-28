@@ -131,7 +131,7 @@ export default function AcceleratorTxnPage() {
             </HeadContainerUseUsDescBox>
             <LinkIcons />
           </HeadContainerUseUsLeftBox>
-          <HeadContainerUseUsButton href="/lists">
+          <HeadContainerUseUsButton href="/">
             Use Us
           </HeadContainerUseUsButton>
         </HeadContainerUseUsBox>
@@ -253,9 +253,8 @@ const ShowItemSliceItemBox = styled.div`
 const ShowItemSliceTitleBox = styled.div`
   max-width: 590px;
   font-size: 80px;
-  color: #fff;
   font-weight: 600;
-  color: #ffffff;
+  color: #c2c5c8;
   line-height: 120px;
   span {
     color: #f8931a;

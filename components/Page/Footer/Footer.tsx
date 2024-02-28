@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
 export default Footer;
 
 const FooterBox = styled.div`
-  background-color: #fff;
+  background-color: #F9FAFB;
   margin-top: 50px;
   min-width: 1240px;
   border-top: 2px solid rgba(247, 147, 26, 0.3);

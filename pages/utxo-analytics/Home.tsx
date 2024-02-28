@@ -55,9 +55,6 @@ const ChainLinks: React.FC = () => {
 const LaunchpadSlice: React.FC = () => {
   return (
     <ShowItemSliceBox>
-      <ShowItemSliceItemBox>
-        <ImgBox alt="" width={660} src={LaunchpadImg} />
-      </ShowItemSliceItemBox>
       <ShowItemSliceItemBox className="launchpad">
         <ShowItemSliceTitleBox>
           Launch<span>pad</span>
@@ -87,9 +84,6 @@ const MarketplaceSlice: React.FC = () => {
           All BRC-20 and <br />
           ARC20 deals here
         </ShowItemSliceContxtBox>
-      </ShowItemSliceItemBox>
-      <ShowItemSliceItemBox style={{ paddingTop: 250 }}>
-        <ImgBox alt="" width={560} src={MarketplaceImg} />
       </ShowItemSliceItemBox>
     </ShowItemSliceBox>
   );
@@ -132,7 +126,7 @@ export default function UTXOAnalyticsPage() {
             </HeadContainerUseUsDescBox>
             <LinkIcons />
           </HeadContainerUseUsLeftBox>
-          <HeadContainerUseUsButton href="/lists">
+          <HeadContainerUseUsButton href="/">
             Use Us
           </HeadContainerUseUsButton>
         </HeadContainerUseUsBox>
@@ -254,9 +248,8 @@ const ShowItemSliceItemBox = styled.div`
 const ShowItemSliceTitleBox = styled.div`
   max-width: 590px;
   font-size: 80px;
-  color: #fff;
+  color: #c2c5c8;
   font-weight: 600;
-  color: #ffffff;
   line-height: 120px;
   span {
     color: #f8931a;

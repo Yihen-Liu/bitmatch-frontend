@@ -15,7 +15,7 @@ const theme = createTheme({
     },
     background: {
       paper: '#F5F5F5',
-      default: '#FFFFFF'
+      default: '#F9FAFB'
     },
     // custom
     gradual: {

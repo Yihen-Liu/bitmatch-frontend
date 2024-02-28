@@ -122,7 +122,7 @@ export default function IndexPage() {
             </HeadContainerUseUsDescBox>
             <LinkIcons />
           </HeadContainerUseUsLeftBox>
-          <HeadContainerUseUsButton href="/lists">
+          <HeadContainerUseUsButton href="/">
             Use Us
           </HeadContainerUseUsButton>
         </HeadContainerUseUsBox>

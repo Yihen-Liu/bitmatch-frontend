@@ -123,7 +123,7 @@ const LinkItem = styled(Link)`
 const MenusBox = styled.div`
   width: 630px;
   height: 66px;
-  background-color: #FFFFFF;
+  background-color: ##F9FAFB;
   font-size: 20px;
   display: flex;
   align-items: center;

@@ -132,7 +132,7 @@ export default function CancleTxnPage() {
             </HeadContainerUseUsDescBox>
             <LinkIcons />
           </HeadContainerUseUsLeftBox>
-          <HeadContainerUseUsButton href="/lists">
+          <HeadContainerUseUsButton href="/">
             Use Us
           </HeadContainerUseUsButton>
         </HeadContainerUseUsBox>
@@ -254,9 +254,8 @@ const ShowItemSliceItemBox = styled.div`
 const ShowItemSliceTitleBox = styled.div`
   max-width: 590px;
   font-size: 80px;
-  color: #fff;
+  color: #c2c5c8;
   font-weight: 600;
-  color: #ffffff;
   line-height: 120px;
   span {
     color: #f8931a;
