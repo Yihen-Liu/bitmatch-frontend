@@ -107,9 +107,9 @@ export default function IndexPage() {
       {/* <ProgressCountdown deadline={15000}  /> */}
       <HeadContainerBox>
         <HeadContainerText>
-          <div>Unleash the Full</div>
+          <div>Bridge in Builder</div>
           <div>
-            Potential of <ImgBox width={88} alt="" src={BIcon} />
+            and Core of <ImgBox width={88} alt="" src={BIcon} />
             <span>itcoin</span>
           </div>
         </HeadContainerText>
