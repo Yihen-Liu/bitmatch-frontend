@@ -53,17 +53,16 @@ const LaunchpadSlice: React.FC = () => {
     <ShowItemSliceBox>
       <ShowItemSliceItemBox className="launchpad">
         <ShowItemSliceTitleBox>
-         <span>手续费</span>追加
+          <span>手续费</span>追加
         </ShowItemSliceTitleBox>
 
         <ShowItemSliceContxtBox>
-          Launch the highest-quality projects to 
-          investments
+          Launch the highest-quality projects to investments
         </ShowItemSliceContxtBox>
         <Spaced size="260" />
       </ShowItemSliceItemBox>
       <HeadContainerUseUsButton href="/increase-fee">
-            Use Us
+        Use Us
       </HeadContainerUseUsButton>
     </ShowItemSliceBox>
   );
@@ -83,31 +82,45 @@ const MarketplaceSlice: React.FC = () => {
         </ShowItemSliceContxtBox>
       </ShowItemSliceItemBox>
       <HeadContainerUseUsButton href="/cancle-txn">
-            Use Us
+        Use Us
       </HeadContainerUseUsButton>
     </ShowItemSliceBox>
   );
 };
 
-export default function TxnAssistPage() {
+export default function OnchainDataPageDefault() {
+  return (
+    <Page>
+      <SideBar>Hello world</SideBar>
+    </Page>
+  );
+}
+
+const SideBar = styled.div`
+  background-color: red;
+  width: 15%;
+`;
+
+export function OnchainDataPage() {
   return (
     <Page>
       {/* <ProgressCountdown deadline={15000}  /> */}
       <HeadContainerBox>
         <HeadContainerText>
           <div>
-            交易助手<ImgBox width={88} alt="" src={BIcon} />
+            链上数据分析
+            <ImgBox width={88} alt="" src={BIcon} />
             <span>itcoin</span>
           </div>
         </HeadContainerText>
 
         <HeadContainerUseUsBox>
           <HeadContainerUseUsLeftBox>
-        <ShowItemSliceTitleBox>
-          交易<span>加速</span>
-        </ShowItemSliceTitleBox>
+            <ShowItemSliceTitleBox>
+              交易<span>加速</span>
+            </ShowItemSliceTitleBox>
             <HeadContainerUseUsDescBox>
-            交易助手中的一种: CPFP加速交易
+              交易助手中的一种: CPFP加速交易
             </HeadContainerUseUsDescBox>
           </HeadContainerUseUsLeftBox>
           <HeadContainerUseUsButton href="/accelerator-txn">

@@ -44,5 +44,5 @@ const FooterContainerBox = styled(PageContent)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 245px;
+  height: 150px;
 `;

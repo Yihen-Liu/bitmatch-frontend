@@ -106,36 +106,27 @@ const DecentralizedIndex: React.FC = () => {
     </DecentralizedindexBox>
   );
 };
+export  function UTXOAnalyticsPageEmbed() {
+    return (
+        <Page>
+            <HeadContainerBox>
+            <iframe src="http://45.43.60.97:8080/web/" width="100%" height="100%" allowFullScreen frameBorder={"0"}> 
+            </iframe>
+            </HeadContainerBox>
+        </Page>
+    )
+}
+
 export default function UTXOAnalyticsPage() {
   return (
     <Page>
       {/* <ProgressCountdown deadline={15000}  /> */}
+       <iframe src="http://45.43.60.97:8080/web/" width="100%" height="800px" allowFullScreen frameBorder={"0"}> 
+       </iframe>
       <HeadContainerBox>
-        <HeadContainerText>
-          <div>
-            UTXO<ImgBox width={88} alt="" src={BIcon} />
-            <span>itcoin</span>
-          </div>
-        </HeadContainerText>
-
         <HeadContainerUseUsBox>
-          <HeadContainerUseUsLeftBox>
-            <HeadContainerUseUsDescBox>
-              Launchpad, Marketplace, decentralized index, Bitcoin full
-              ecological infrastructure
-            </HeadContainerUseUsDescBox>
-            <LinkIcons />
-          </HeadContainerUseUsLeftBox>
-          <HeadContainerUseUsButton href="/">
-            Use Us
-          </HeadContainerUseUsButton>
         </HeadContainerUseUsBox>
       </HeadContainerBox>
-
-      <LaunchpadSlice />
-      <Spaced size="80" />
-      <MarketplaceSlice />
-      <Spaced size="210" />
     </Page>
   );
 }

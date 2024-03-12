@@ -38,6 +38,11 @@ export const TopBar = () => {
       path: "/txn-assist",
       tip:"",
     },
+    {
+      title: "链上数据",
+      path: "/onchain-data",
+      tip:"",
+    },
     /*
     {
       title: "交易加速",
@@ -121,7 +126,7 @@ const LinkItem = styled(Link)`
 `;
 
 const MenusBox = styled.div`
-  width: 630px;
+  width: 730px;
   height: 66px;
   background-color: ##F9FAFB;
   font-size: 20px;

@@ -10,7 +10,7 @@ const Page: React.FC<{ children: React.ReactNode }> = ({ children }) => {
       <TopBar/>
       <PageContent>{children}</PageContent>
       <Footer/>
-    </PageBox>
+   </PageBox>
   )
 }
 
