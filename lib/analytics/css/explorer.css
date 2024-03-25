@@ -1,0 +1,165 @@
+body
+{
+	background-color: #F9FAFB;
+	text-align: center;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+table
+{
+	display: inline-block;
+	border: none;
+	border-collapse: collapse;
+}
+
+th, tr, td
+{
+	border: none;
+}
+
+td
+{
+	font-family: monospace;
+}
+
+.tx-part-minimized
+{
+	display: inline-block;
+}
+
+.section-heading
+{
+	font-size: x-large;
+	font-weight: bold;
+/*	margin-bottom: 18px;*/
+}
+
+#page
+{
+	display: inline-block;
+	background-color: #F9FAFB;
+	text-align: center;
+}
+
+#page-header
+{
+	border-bottom: 1px solid black;
+}
+
+.menu-item
+{
+	margin: 0 24px;
+	text-decoration: none;
+}
+
+.query-box
+{
+	font-family: monospace;
+	text-align: center;
+	margin: 24px 0;
+	padding: 10px 0;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.page-content
+{
+	display: inline-block;
+
+	padding: 0 12px;
+
+	background-color: #F9FAFB;
+	text-align: center;
+}
+
+.page-heading-1
+{
+	font-size: xx-large;
+	font-weight: bold;
+	margin: 16px 0 12px;
+}
+
+.page-heading-2
+{
+	font-size: x-large;
+	font-weight: bold;
+	margin: 10px 0 8px;
+}
+
+.page-heading-3
+{
+	font-size: large;
+	font-weight: bold;
+	margin: 8px 0 6px;
+}
+
+.info-window-label
+{
+	text-align: right;
+	font-weight: bold;
+	padding: 2px 8px 2px 0;
+}
+
+.field-list
+{
+	display: inline-block;
+	text-align: center;
+}
+
+.maximized-section-name
+{
+	vertical-align: top;
+
+	font-family: sans-serif;
+	font-size: normal;
+	font-weight: bold;
+}
+
+.maximized-section-data
+{
+	vertical-align: top;
+}
+
+.maximized-section
+{
+	padding: 10px 10px 14px;
+
+	border: 1px solid black;
+	border-collapse: collapse;
+
+	background-color: #f0f0f0;
+}
+
+.view-toggle-button-off
+{
+	background-color: #f0f0f0;
+	color: black;
+}
+
+.view-toggle-button-on
+{
+	background-color: black;
+	color: white;
+}
+
+.view-toggle-button
+{
+	display: inline-block;
+	cursor: pointer;
+	padding: 3px 6px;
+	border-radius: 5px;
+	font-weight: bold;
+	border: 1px solid;
+}
+
+#page-footer
+{
+	margin-top: 24px;
+	border-top: 1px solid black;
+	padding: 8px 12px;
+}
+

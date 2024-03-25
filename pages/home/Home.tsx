@@ -107,9 +107,9 @@ export default function IndexPage() {
       {/* <ProgressCountdown deadline={15000}  /> */}
       <HeadContainerBox>
         <HeadContainerText>
-          <div>Bridge in Builder</div>
+          <div>Bridge in Every </div>
           <div>
-            and Core of <ImgBox width={88} alt="" src={BIcon} />
+           Participant of <ImgBox width={88} alt="" src={BIcon} />
             <span>itcoin</span>
           </div>
         </HeadContainerText>
@@ -122,9 +122,7 @@ export default function IndexPage() {
             </HeadContainerUseUsDescBox>
             <LinkIcons />
           </HeadContainerUseUsLeftBox>
-          <HeadContainerUseUsButton href="/">
-            Use Us
-          </HeadContainerUseUsButton>
+          <HeadContainerUseUsButton href="/">Use Us</HeadContainerUseUsButton>
         </HeadContainerUseUsBox>
       </HeadContainerBox>
 

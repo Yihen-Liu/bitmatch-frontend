@@ -89,37 +89,25 @@ const MarketplaceSlice: React.FC = () => {
   );
 };
 
-export default function TxnAssistPage() {
+export default function ShoppingPage() {
   return (
     <Page>
       {/* <ProgressCountdown deadline={15000}  /> */}
       <HeadContainerBox>
         <HeadContainerText>
           <div>
-            交易助手
-            <ImgBox width={88} alt="" src={BIcon} />
+            比特币商店<ImgBox width={88} alt="" src={BIcon} />
             <span>itcoin</span>
           </div>
         </HeadContainerText>
-        <Link href={"https://coinb.in/#home"}>Reference 1</Link>
+
         <HeadContainerUseUsBox>
           <HeadContainerUseUsLeftBox>
-            <ShowItemSliceTitleBox>
-              交易<span>加速</span>
-            </ShowItemSliceTitleBox>
-            <HeadContainerUseUsDescBox>
-              交易助手中的一种: CPFP加速交易
-            </HeadContainerUseUsDescBox>
           </HeadContainerUseUsLeftBox>
-          <HeadContainerUseUsButton href="/accelerator-txn">
-            Use Us
-          </HeadContainerUseUsButton>
         </HeadContainerUseUsBox>
       </HeadContainerBox>
 
-      <LaunchpadSlice />
       <Spaced size="80" />
-      <MarketplaceSlice />
       <Spaced size="210" />
     </Page>
   );

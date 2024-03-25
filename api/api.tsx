@@ -47,3 +47,32 @@ export const fetchOrderCList = (params: any) => {
 export const fetchFeesApi = () => {
   return Ajax.get(`/mempool/fees/recommended`)
 }
+
+// 使用快速排序对数组进行排序 从大到小
+export const quickSort = (arr: any) => {
+  if (arr.length <= 1) {
+    return arr
+  }
+  let pivotIndex = Math.floor(arr.length / 2)
+  let pivot = arr.splice(pivotIndex, 1)[0]
+  let left = []
+  let right = []
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > pivot) {
+      left.push(arr[i])
+    } else {
+      right.push(arr[i])
+    }
+  }
+  return quickSort(left).concat([pivot], quickSort(right))
+}
+
+// 计算两个数之和 
+export const add = (arg1: number, arg2: number): number => {
+    const decimalPlaces1 = arg1.toString().includes('.') ? arg1.toString().split('.')[1].length : 0;
+    const decimalPlaces2 = arg2.toString().includes('.') ? arg2.toString().split('.')[1].length : 0;
+    
+    const factor = Math.pow(10, Math.max(decimalPlaces1, decimalPlaces2));
+    
+    return (arg1 * factor + arg2 * factor) / factor;
+}

@@ -4,12 +4,12 @@ import TopBar from './TopBar'
 import Footer from './Footer'
 import PageContent from './PageContent'
 
-const Page: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+const Page: React.FC<{ children: React.ReactNode}> = ({ children}) => {
   return (
     <PageBox>
       <TopBar/>
       <PageContent>{children}</PageContent>
-      <Footer/>
+      {/* <Footer /> */}
    </PageBox>
   )
 }

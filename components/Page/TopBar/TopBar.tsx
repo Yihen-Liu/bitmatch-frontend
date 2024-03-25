@@ -4,7 +4,7 @@ import Logo from "@/components/Logo";
 import styled from "@emotion/styled";
 /* Core */
 import Link from "next/link";
-import { usePathname, useRouter, useParams } from "next/navigation";
+import { usePathname } from "next/navigation";
 import ToastModals from "@/context/ToastModals";
 import { useDispatch, addToast } from "@/lib/redux";
 import dynamic from "next/dynamic";
@@ -16,32 +16,37 @@ export const TopBar = () => {
     {
       title: "Home",
       path: "/",
-      tip:"",
+      tip: "",
     },
     {
       title: "API 服务",
       path: "/api-service",
-      tip:"",
+      tip: "",
     },
     {
       title: "UTXO分析",
       path: "/utxo-analytics",
-      tip:"",
+      tip: "",
     },
     {
       title: "Fee 估算",
       path: "/fee-estimate",
-      tip:"",
+      tip: "",
     },
     {
       title: "交易助手",
       path: "/txn-assist",
-      tip:"",
+      tip: "",
     },
     {
       title: "链上数据",
       path: "/onchain-data",
-      tip:"",
+      tip: "",
+    },
+    {
+      title: "比特币商店",
+      path: "/shopping",
+      tip: "",
     },
     /*
     {
@@ -126,9 +131,9 @@ const LinkItem = styled(Link)`
 `;
 
 const MenusBox = styled.div`
-  width: 730px;
+  width: 900px;
   height: 66px;
-  background-color: ##F9FAFB;
+  background-color: #f9fafb;
   font-size: 20px;
   display: flex;
   align-items: center;

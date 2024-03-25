@@ -14,9 +14,6 @@ import L0Img from "@/assets/img/l0_img.png";
 import R0Img from "@/assets/img/r0_img.png";
 import LinkIcons from "@/components/Page/Footer/LinkIcons";
 import ChainIcons from "@/components/ChainIcons";
-import DecentralizedindexImg from "@/assets/img/Decentralizedindex.png";
-import LaunchpadImg from "@/assets/img/Launchpad.png";
-import MarketplaceImg from "@/assets/img/Marketplace.png";
 import MarketplaceBgImg from "@/assets/img/Marketplace_bg.png";
 
 import { Spaced } from "@/components/Spaced";
@@ -33,23 +30,6 @@ const ChainIconItem: React.FC<{ chain: Chains; width: number }> = ({
       <ChainIcons chain={chain} size={width} />
       <ChainIconItemTitBox>{chain}</ChainIconItemTitBox>
     </ChainIconItemBox>
-  );
-};
-const ChainLinks: React.FC = () => {
-  return (
-    <ChainLinksBox>
-      <ChainIconItem chain={Chains.UNISAT} width={106} />
-      <ChainIconItem chain={Chains.OKX} width={106} />
-      <ChainIconItem chain={Chains.MAGICEDEN} width={106} />
-      <ChainIconItem chain={Chains.Atomicalmarket} width={106} />
-      <ChainIconItem chain={Chains.TRAC} width={106} />
-      {/* <ChainIconItem chain="ORDINALS" width={120} />
-      <ChainIconItem chain="BINANCE" width={120} />
-      <ChainIconItem chain="OKX" width={120} />
-      <ChainIconItem chain="GATE.IO" width={120} /> */}
-      {/* <ChainIconItem chain="GATE.IO" width={120} />
-      <ChainIconItem chain="UNISAT" width={94} /> */}
-    </ChainLinksBox>
   );
 };
 const LaunchpadSlice: React.FC = () => {
@@ -88,24 +68,7 @@ const MarketplaceSlice: React.FC = () => {
     </ShowItemSliceBox>
   );
 };
-const DecentralizedIndex: React.FC = () => {
-  return (
-    <DecentralizedindexBox>
-      <ShowItemSliceLineBox>
-        <ImgBox alt="" width={1035} src={DecentralizedindexImg} />
-      </ShowItemSliceLineBox>
-      <ShowItemSliceLineBox className="decentralizedindex">
-        <DecentralizedindexTitBox>
-          Decentralized<span>index</span>
-        </DecentralizedindexTitBox>
-        <DecentralizedindexTextBox>
-          A fully decentralized Ordinals index network driven by consensus, any
-          node can join and exit the network at will
-        </DecentralizedindexTextBox>
-      </ShowItemSliceLineBox>
-    </DecentralizedindexBox>
-  );
-};
+
 export default function IncreaseFeePage() {
   return (
     <Page>
@@ -113,29 +76,39 @@ export default function IncreaseFeePage() {
       <HeadContainerBox>
         <HeadContainerText>
           <div>
-            Fee 估算<ImgBox width={88} alt="" src={BIcon} />
+            Fee 估算
+            <ImgBox width={88} alt="" src={BIcon} />
             <span>itcoin</span>
           </div>
         </HeadContainerText>
-
-        <HeadContainerUseUsBox>
-          <HeadContainerUseUsLeftBox>
-            <HeadContainerUseUsDescBox>
-              Launchpad, Marketplace, decentralized index, Bitcoin full
-              ecological infrastructure
-            </HeadContainerUseUsDescBox>
-            <LinkIcons />
-          </HeadContainerUseUsLeftBox>
-          <HeadContainerUseUsButton href="/">
-            Use Us
-          </HeadContainerUseUsButton>
-        </HeadContainerUseUsBox>
+        <div>
+          <Link href={"https://bitcoiner.live"}>示例网站</Link>
+        </div>
+        <div>
+          <Link
+            href={
+              "https://www.reddit.com/r/Bitcoin/comments/bgg5n7/stop_overpaying_fees_i_made_a_website_to_give/?rdt=53991"
+            }
+          >
+            Reddit论坛fee讨论
+          </Link>
+        </div>
+        <div>
+          <Link href={"https://github.com/joltfun/btcflow"}>
+            Github 参考源码
+          </Link>
+        </div>
+        <div>
+          <Link href={"https://jochen-hoenicke.de/queue/#BTC,24h,fee"}>
+            内存监控
+          </Link>
+        </div>
+        <div>
+          <Link href={"https://github.com/bitcoinfees/bitcoin-feemodel"}>
+            开源项目
+          </Link>
+        </div>
       </HeadContainerBox>
-
-      <LaunchpadSlice />
-      <Spaced size="80" />
-      <MarketplaceSlice />
-      <Spaced size="210" />
     </Page>
   );
 }

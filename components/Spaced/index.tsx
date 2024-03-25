@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import React, { useMemo } from "react";
+import { color } from "styled-system";
 
 interface StyleProp {
   size?: string;

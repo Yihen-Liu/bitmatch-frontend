@@ -19,6 +19,7 @@ import { Spaced } from "@/components/Spaced";
 import { Chains } from "@/utils/Chains";
 
 import Link from "next/link";
+import NavigateLists from "./NavigateLists";
 
 const ChainIconItem: React.FC<{ chain: Chains; width: number }> = ({
   chain,
@@ -88,51 +89,27 @@ const MarketplaceSlice: React.FC = () => {
   );
 };
 
-export default function OnchainDataPageDefault() {
-  return (
-    <Page>
-      <SideBar>Hello world</SideBar>
-    </Page>
-  );
-}
 
 const SideBar = styled.div`
   background-color: red;
   width: 15%;
 `;
 
-export function OnchainDataPage() {
+export default function OnchainDataPage() {
   return (
     <Page>
       {/* <ProgressCountdown deadline={15000}  /> */}
       <HeadContainerBox>
         <HeadContainerText>
-          <div>
+          {/* <div>
             链上数据分析
             <ImgBox width={88} alt="" src={BIcon} />
             <span>itcoin</span>
-          </div>
+          </div> */}
         </HeadContainerText>
-
-        <HeadContainerUseUsBox>
-          <HeadContainerUseUsLeftBox>
-            <ShowItemSliceTitleBox>
-              交易<span>加速</span>
-            </ShowItemSliceTitleBox>
-            <HeadContainerUseUsDescBox>
-              交易助手中的一种: CPFP加速交易
-            </HeadContainerUseUsDescBox>
-          </HeadContainerUseUsLeftBox>
-          <HeadContainerUseUsButton href="/accelerator-txn">
-            Use Us
-          </HeadContainerUseUsButton>
-        </HeadContainerUseUsBox>
       </HeadContainerBox>
-
-      <LaunchpadSlice />
-      <Spaced size="80" />
-      <MarketplaceSlice />
-      <Spaced size="210" />
+         <NavigateLists />
+      <Spaced size="300" />
     </Page>
   );
 }
