@@ -48,6 +48,11 @@ export const TopBar = () => {
       path: "/shopping",
       tip: "",
     },
+    {
+      title: "Devnet",
+      path: "/devnet",
+      tip: "",
+    },
     /*
     {
       title: "交易加速",
