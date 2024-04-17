@@ -106,6 +106,8 @@ export default function DevnetPage() {
               <br />
               3. fork unisat wallet, 可以使用rpc自定义
               <br />
+              4. 魔改bitcoind源码，针对有ordinals的，在内存池里优先打包
+              <br />
         <HeadContainerUseUsBox>
           <HeadContainerUseUsLeftBox>
           </HeadContainerUseUsLeftBox>

@@ -13,11 +13,13 @@ export const TopBar = () => {
   const pathname = usePathname();
 
   const menusArr = [
+    /*
     {
       title: "Home",
       path: "/",
       tip: "",
     },
+    */
     {
       title: "API 服务",
       path: "/api-service",
@@ -38,19 +40,21 @@ export const TopBar = () => {
       path: "/txn-assist",
       tip: "",
     },
+    /*
     {
       title: "链上数据",
       path: "/onchain-data",
       tip: "",
     },
-    {
-      title: "比特币商店",
-      path: "/shopping",
-      tip: "",
-    },
+    */
     {
       title: "Devnet",
       path: "/devnet",
+      tip: "",
+    },
+    {
+      title: "比特币商店",
+      path: "/shopping",
       tip: "",
     },
     /*
